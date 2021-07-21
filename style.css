@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    float: right;
+}
+header .logo {
+    position: relative;
+    max-width: 100px;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+}
+header .navigation li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: 0.2s ease-in-out;
+}
+header .navigation li a:hover {
+    transform: translateY(-10px);
+}
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .textBox h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1,4em;
+    font-weight: 700;
+}
+.content .textBox p {
+    color: #fff;
+}
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #e51e2a;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.sci {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin-left: 15px;
+    background: #222;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.sci li a:hover {
+    background: #e51e2a;
+    transform: translateY(-10px);
+}
+.sci li a img{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+/* Slideshow container */
+.blog-slider__container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 180px;
+    margin-right: 70px;
+    height: 300px;
+}
+.blogSlides img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+} 
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+} 
+/* Position the "next button" to the right */ 
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */ 
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.blog-slider__text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+} 
+/* The dots/bullets/indicators */
+.blogSlider__dots {
+    text-align: center;
+}
+.--dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active,
+.blogSlider__dots--dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+}
+
+/* weather forecast */
+.input {
+    display: flex;
+    align-items: center;
+}
+.inputValue{
+    height: 40px;
+    width: 30vh;
+    background: cornsilk;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+.submitButton{
+    height: 40px;
+    width: 10vh;
+    background: cornsilk;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.display {
+    margin-top: 20px;
+}
+.name,
+.desc,
+.temp,
+.icon {
+    color: cornsilk;
+    font-size: 15px;
+    padding: 10px;
+    float: left;
+}
+.weather {
+    margin-top: 50px;
+}
+.weather h4 {
+    margin-bottom: 10px;
+    color:cornsilk;
+}

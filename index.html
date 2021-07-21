@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Netherlands</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="https://www.government.nl/"><img src="./pictures/logo.png" class="logo"></a>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/List_of_cities_in_the_Netherlands_by_province">Cities</a></li>
+                    <li><a href="https://www.government.nl/">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Netherlands</h2>
+                    <p>The Netherlands, informally Holland, is a country located 
+                        in Western Europe with territories in the Caribbean. 
+                        It is the largest of four constituent countries of the Kingdom of the Netherlands.
+                        The four largest cities in the Netherlands are Amsterdam, Rotterdam, The Hague and Utrecht.
+                    </p>
+                        <a href="https://en.wikipedia.org/wiki/Netherlands">Learn More</a>
+                    
+                    <div class="weather">
+                        <h4>Weather Forecast</h4>
+                        <div class="input">
+                            <input class="inputValue" type="text" placeholder="City Name">
+                            <input class="submitButton" type="submit" value="Submit">     
+                        </div>
+                        <div class="display">
+                            <h4 class="name"></h4>
+                            <p class="desc"></p>
+                            <p class="temp"></p>
+                            <img class="icon">        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-slider__container">
+                <div class="blogSlides fade">
+                  <img src="./cities-pictures/amsterdam.jpg">
+                  <div class="blog-slider__text">Amsterdam</div>
+                </div>              
+                <div class="blogSlides fade">
+                  <img src="./cities-pictures/rotterdam.jpg">
+                  <div class="blog-slider__text">Rotterdam</div>
+                </div>              
+                <div class="blogSlides fade">
+                  <img src="./cities-pictures/thehague.jpg">
+                  <div class="blog-slider__text">The Hague</div>
+                </div>     
+                <div class="blogSlides fade">
+                    <img src="./cities-pictures/utrecht.jpg">
+                    <div class="blog-slider__text">Utrecht</div>
+                  </div>
+                  <div class="blogSlides fade">
+                    <img src="./cities-pictures/eindhoven.jpg">
+                    <div class="blog-slider__text">Eindhoven</div>
+                  </div>         
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="blogSlider__dots" style="text-align:center">
+                <span class="blogSlider__dots--dot" onclick="currentSlide(1)"></span> 
+                <span class="blogSlider__dots--dot" onclick="currentSlide(2)"></span> 
+                <span class="blogSlider__dots--dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Rijksoverheid/"><img src="./pictures/facebook.png"></a></li>
+                <li><a href="https://twitter.com/Rijksoverheid?fbclid=IwAR1XpzW-ZkR4vMDM-yO0FRruJIRphFwEL9KCa1RouC3YFeH3LCOwgFp84A4"><img src="./pictures/twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/rijksoverheid.nl/?fbclid=IwAR3hL9-dir7zIhdsIswoHtq2EYQnLoBE0XRbcXirKbL9iCZGWmc0DQovzOk"><img src="./pictures/instagram.png"></a></li>
+            </ul>
+            
+        </section>
+        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./app.js" async defer></script>
+    </body>
+</html>
