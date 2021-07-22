@@ -119,7 +119,7 @@ header .navigation li a:hover {
     width: 80%;
     position: relative;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 105px;
     margin-right: 70px;
     height: 300px;
 }
@@ -197,7 +197,22 @@ header .navigation li a:hover {
       opacity: 1
     }
 }
-
+/*table*/
+table {
+    color: #f2f2f2;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+table tr th {
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
 /* weather forecast */
 .input {
     display: flex;
