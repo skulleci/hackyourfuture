@@ -205,7 +205,7 @@ header .navigation li a:hover {
 }
 .inputValue{
     height: 40px;
-    width: 30vh;
+    width: 40vh;
     background: cornsilk;
     font-size: 15px;
     border: none;
@@ -215,7 +215,7 @@ header .navigation li a:hover {
 }
 .submitButton{
     height: 40px;
-    width: 10vh;
+    width: 20vh;
     background: cornsilk;
     font-size: 15px;
     border: none;

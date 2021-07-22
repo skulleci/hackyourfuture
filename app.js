@@ -34,13 +34,14 @@ const temp = document.querySelector(".temp");
 const icon = document.querySelector('.icon');
 
 submitButton.addEventListener('click', () => {
-  fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=ce27b58ce285f0299f0de1cb104d4c9c').then(response => {
-  return response.json();
-  }).then((data) => {
-  console.log(data);
-    names.innerHTML = data.name;
-    temp.innerHTML = Math.floor(`${data.main.temp}`- 273.15) +" " + "C";
-    desc.innerHTML = data.weather[0].description;
-    icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=ce27b58ce285f0299f0de1cb104d4c9c')
+  .then(response => {
+    return response.json();
+    }).then((data) => {
+      console.log(data);
+      names.innerHTML = data.name;
+      temp.innerHTML = Math.floor(`${data.main.temp}`- 273.15) +" " + "C";
+      desc.innerHTML = data.weather[0].description;
+      icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
   }); 
 });
