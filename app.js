@@ -40,7 +40,7 @@ submitButton.addEventListener('click', () => {
     }).then((data) => {
       console.log(data);
       names.innerHTML = data.name;
-      temp.innerHTML = Math.floor(`${data.main.temp}`- 273.15) +" " + "C";
+      temp.innerHTML = Math.floor(`${data.main.temp}`- 273.15) + " " + "C";
       desc.innerHTML = data.weather[0].description;
       icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
   }); 
